@@ -3,15 +3,19 @@
 <head>
      <title>DPX Home Page</title>
 </head> 
+     <video autoplay muted loop playsinline id="bg-video">
+       <source src="bgvdpx.mp4" type="video/mp4"> 
+     </video>
      <style>
-          body{
-               margin: 0;
-               background-image: url("file_000000003c4c8230bb67bf2f4e0217fd.png");
-               background-repeat: no-repeat;
-               background-size: cover;
-               background-position: center;
-               background-attachment: fixed;
-               min-height: 100vh;
+          #bg-video{
+               position: fixed;
+               top:0;
+               left:0;
+               width:100%;
+               breadth:100%;
+               object-fit: cover;
+               z-index:-1;              
+               pointer-events: none;
           }
           h1{
                text-align: center;
