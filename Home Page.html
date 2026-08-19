@@ -6,6 +6,7 @@
      <video autoplay muted loop playsinline id="bg-video">
        <source src="bgvdpx.mp4" type="video/mp4"> 
      </video>
+     <div class="idqr-png"></div>
      <style>
           #bg-video{
                position:fixed;
@@ -31,16 +32,22 @@
                font-family: serif;
                letter-spacing: 7px;
           }
-          idqr-png {
-                 position: absolute;
+          .idqr-png {
                  left:200px;
                  top:100px; 
                  z-index:1;
+                 width:200px;
+                 height:100px;
+                 background:blue;
+                 transition:0.3s;
          }
+          .idqr-png:hover{
+               transform:scale(0.8);
+          }       
      </style>
 <body>
      
-      <img src="idqr.png" class="idqr-png" alt="Logo" style="opacity: 0.7" width="50">
+      <img src="idqr.png" class="idqr-png" alt="Logo" style="opacity: 0.7" width="100">
   
 <h1>Welcome To DARK PHOENIX'S<br>HOME PAGE</h1>
 <p>You Have Logged in Successfully!!!</p>
